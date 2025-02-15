@@ -1,12 +1,23 @@
 import React, { useEffect, useState} from 'react'
 import { Box, TextField, Stack, Typography, Button } from '@mui/material'
+import { exerciseOptions, getData } from '../utils/getData';
 
 const Search = () => {
-  const [search, setSearch] = useState[''];
+  const [search, setSearch] = useState('');
+  const [exercises, setExercises] = useState([]);
 
   const searchQuery = async () => {
     if(search) {
-      const data = await getData();
+      const data = await getData('https://exercisedb.p.rapidapi.com/exercises', exerciseOptions);
+      
+      const searchExercise = data.filter(
+        (exercise) => exercise.name.toLowerCase().includes(search)
+        || exercise.target.toLowerCase().includes(search)
+        || exercise.bodyPart.toLowerCase().includes(search)
+        || exercise.equipment.toLowerCase().includes(search)
+      );
+      setSearch('');
+      setExercises([searchExercise]);
     }
   }
 
