@@ -1,5 +1,5 @@
 import React from 'react'
-import { Box, Stack, Typography } from '@mui/material'
+import { Box, Stack, Typography, Button } from '@mui/material'
 
 const Introduction = () => {
   return (
@@ -25,6 +25,9 @@ const Introduction = () => {
         <Typography fontSize='22px' lineHeight='85px'>
             Check out the most effective exercises!
         </Typography>
+        <Button variant='contained' sx={{backgroundColor: 'ochre.main', color: 'ochre.contrastText', '&:hover': { backgroundColor: 'ochre.dark' }}}>
+            Explore Exercises
+        </Button>
     </Box>
   )
 }
