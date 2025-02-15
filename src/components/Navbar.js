@@ -22,11 +22,11 @@ const Navbar = () => {
         gap="40px"
         alignItems="flex-end"
         >
-          <Link to ='/' style = {{color: 'black', textDecoration: 'none', borderBottom: '3px solid black'}}>
+          <Link to ='/' style = {{color: 'black', textDecoration: 'none', borderBottom: '3px solid #ffbd59'}}>
             Home
           </Link>
-          <a href="#exercises" style={{textDecoration: 'none', color: 'black', borderBottom: '3px solid black'}}> Exercises </a>
-          <a href="#reviews" style={{textDecoration: 'none', color: 'black', borderBottom: '3px solid black'}}> Reviews </a>
+          <a href="#exercises" style={{textDecoration: 'none', color: 'black', borderBottom: '3px solid #ffbd59'}}> Exercises </a>
+          <a href="#reviews" style={{textDecoration: 'none', color: 'black', borderBottom: '3px solid #ffbd59'}}> Reviews </a>
 
         </Stack>
     </Stack>
