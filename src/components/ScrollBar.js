@@ -30,7 +30,7 @@ const ScrollBar = ({data, bodyPart, setBodyPart}) => {
   return (
     <ScrollMenu LeftArrow={LeftArrow} RightArrow={RightArrow}>
       {data.map((item) => (
-        <Box key={item.id || item} itemId={item.id || item} title = {item.id||item} m = "0 110px">
+        <Box key={item.id || item} itemId={item.id || item} title = {item.id||item} m = "0 100px">
           <BodyPart item = {item} bodyPart = {bodyPart} setBodyPart = {setBodyPart} />
         </Box>
       )
