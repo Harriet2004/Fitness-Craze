@@ -9,6 +9,10 @@ const BodyPart = ({item, setBodyPart, bodyPart}) => {
    type = "button"
    alignItems="center"
    justifyContent="center"
+   onClick={() => {
+    setBodyPart(item);
+    window.scrollTo({top: 1800, left: 100, behavior: 'smooth'})
+    }}
    sx = {
     bodyPart === item ? {
     cursor: 'pointer',
@@ -25,7 +29,8 @@ const BodyPart = ({item, setBodyPart, bodyPart}) => {
     borderBottomLeftRadius: '20px'  
     }}
    >
-    <img src = {Icon} alt = "Dumbell" />
+    <img src = {Icon} alt = "Dumbell" style={{width: '40px', height: '40px'}} />
+    <Typography fontWeight='bold' fontSize='20px' textTransform='uppercase'>{item}</Typography>
    </Stack>
   )
 }
