@@ -10,16 +10,16 @@ import { getData, exerciseOptions } from '../utils/getData'
 
 const Exercise = () => {
   const [exerciseDetail, setExerciseDetail] = useState([]);
+  const {id} = useParams();
   useEffect(() => {
     const getExerciseData = async (params) => {
       const exerciseUrl = 'https://exercisedb.p.rapidapi.com';
       const youtubeUrl = 'https://youtube-search-and-download.p.rapidapi.com'
-      const data = await getData(`${exerciseUrl}/exercises/${id}`, exerciseOptions);
+      const data = await getData(`${exerciseUrl}/exercises/exercise/${id}`, exerciseOptions);
       setExerciseDetail(data);
     }
     getExerciseData();
   }, [id])
-  const {id} = useParams();
   return (
     <Box>
       <ExerciseDetails exerciseDetail = {exerciseDetail} />
