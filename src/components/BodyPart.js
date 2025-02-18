@@ -11,7 +11,7 @@ const BodyPart = ({item, setBodyPart, bodyPart}) => {
    justifyContent="center"
    onClick={() => {
     setBodyPart(item);
-    window.scrollTo({top: 1800, left: 100, behavior: 'smooth'})
+    window.scrollTo({top: 1275, left: 100, behavior: 'smooth'})
     }}
    sx = {
     bodyPart === item ? {
@@ -19,14 +19,12 @@ const BodyPart = ({item, setBodyPart, bodyPart}) => {
     gap: '50px',
     width: '250px',
     height: '250px',
-    borderBottomLeftRadius: '20px',
-    borderTop: '5px solid #ffbd59'
+    border: '5px solid black'
     } : {
     cursor: 'pointer',
     gap: '50px',
     width: '250px',
     height: '250px',
-    borderBottomLeftRadius: '20px'  
     }}
    >
     <img src = {Icon} alt = "Dumbell" style={{width: '40px', height: '40px'}} />
