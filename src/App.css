@@ -1,13 +1,12 @@
 body {
     font-family: 'Josefin Sans';
-    background-color: #FFFAFB;
+    background-color: #f0ebd9;
   }
   
   * {
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
-  
   }
   
   ::-webkit-scrollbar {
@@ -29,9 +28,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #FF2625;
     font-size: 25px;
-    border-radius: 4px;
     position: absolute;
     bottom: -20px;
     right: 80px;
@@ -40,12 +37,12 @@ body {
   }
   
   .left-arrow {
-    left: 140px;
+    left: 60px;
     right: auto;
   }
 
   .right-arrow {
-    right: 140px;
+    right: 50px;
   }
   
   .right-arrow:hover,
@@ -64,22 +61,11 @@ body {
     height: 742px;
   }
   
-  .hero-banner-img {
-    position: absolute;
-    right: 40px;
-    top: 0px;
-    width: 700px;
-    height: 900px;
-    margin-top: -330px;
-  
-  }
-  
   .exercise-card {
-    width: 400px;
-    height: 445px;
+    width: 380px;
+    height: 450px;
     background: #fff;
-    border-top: 4px solid #FF2625;
-    border-bottom-left-radius: 20px;
+    border-top: 4px solid #ffbd59;
     text-decoration: none;
     display: flex;
     justify-content: space-between;
@@ -96,17 +82,19 @@ body {
   .bodyPart-card {
     transform: scale(1, 1);
     transition: 0.3s all ease-in-out;
-    background-color: #fff;
+    background-color: #ffbd59;
   }
   
-  .exercise-card:hover,
+  .exercise-card:hover {
+    transform: scale(1.1, 1.1);
+  }
   .bodyPart-card:hover {
     transform: scale(1.1, 1.1);
   }
   
   .search-btn:hover {
-    color: #FF2625 !important;
-    border: 1px solid #FF2625 !important;
+    color: #ffbd59 !important;
+    border: 1px solid #ffbd59 !important;
   }
   
   .exercise-video {
@@ -124,7 +112,6 @@ body {
       height: 300px;
     }
   
-  
     .react-horizontal-scrolling-menu--scroll-container {
       width: 500px;
     }
@@ -132,10 +119,6 @@ body {
     .left-arrow,
     .right-arrow {
       position: static !important;
-    }
-  
-    .hero-banner-img {
-      display: none;
     }
   
     .exercise-card {
@@ -146,7 +129,6 @@ body {
       width: 320px;
       height: 300px;
     }
-  
   }
   
   @media screen and (max-width:400px) {
