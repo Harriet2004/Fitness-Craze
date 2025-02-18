@@ -4,8 +4,8 @@ import { Box, Stack, Typography } from '@mui/material'
 const Videos = ({exerciseVideo, name}) => {
   if(!exerciseVideo.length) return 'Loading...';
   return (
-    <Box p="20px">
-        <Typography sx={{ fontSize: { lg: '40px', xs: '25px' } }} fontWeight={500} color="#000" mb="30px" textAlign='center'>
+    <Box bgcolor='rgb(72, 70, 63)' pb="80px">
+        <Typography sx={{ fontSize: { lg: '40px', xs: '25px' } }} fontWeight={500} color="white" pt="50px" mb="30px" textAlign='center'>
             Watch videos for <span style = {{color:'rgb(227, 147, 19)', textTransform:'uppercase', fontWeight:'bold'}}> {name} </span>
         </Typography>
         <Stack sx={{ flexDirection: { lg: 'row' }, gap: { lg: '80px', xs: '0px' } }} justifyContent="center" flexWrap="wrap" alignItems="center">
@@ -19,10 +19,10 @@ const Videos = ({exerciseVideo, name}) => {
                 >
                 <img src={item.video.thumbnails[0].url} alt={item.video.title} />
             <Box>
-                <Typography sx={{ fontSize: { lg: '22px', xs: '15px' } }} fontWeight={600} color="#000"> 
+                <Typography sx={{ fontSize: { lg: '22px', xs: '15px' } }} fontWeight={600} color="white"> 
                     {item.video.title}
                 </Typography>
-                <Typography fontSize="14px" color="#000">
+                <Typography fontSize="14px" color="white">
                     {item.video.channelName}
                 </Typography>
             </Box>
@@ -40,10 +40,10 @@ const Videos = ({exerciseVideo, name}) => {
                 >
                 <img src={item.video.thumbnails[0].url} alt={item.video.title} />
             <Box>
-                <Typography sx={{ fontSize: { lg: '22px', xs: '15px' } }} fontWeight={600} color="#000"> 
+                <Typography sx={{ fontSize: { lg: '22px', xs: '15px' } }} fontWeight={600} color="white"> 
                     {item.video.title}
                 </Typography>
-                <Typography fontSize="14px" color="#000">
+                <Typography fontSize="14px" color="white">
                     {item.video.channelName}
                 </Typography>
             </Box>
