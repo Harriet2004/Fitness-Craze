@@ -1,5 +1,5 @@
 import React from 'react';
-import Logo from '../assets/muscle.png';
+import Logo from '../assets/NEW.png';
 
 import { Stack } from '@mui/material';
 import { Link } from 'react-router-dom';
@@ -14,7 +14,7 @@ const Navbar = () => {
     width='100%'
     >
       <Link to='/'>
-        <img src={Logo} alt = 'Logo' style ={{marginBottom: '10px', width: '175px', height: '60px'}} />
+        <img src={Logo} alt = 'Logo' style ={{marginBottom: '10px', width: '220px', height: '60px'}} />
       </Link>
         <Stack
         direction="row"
@@ -22,11 +22,11 @@ const Navbar = () => {
         gap="40px"
         alignItems="flex-end"
         >
-          <Link to ='/' style = {{color: 'black', textDecoration: 'none', borderBottom: '3px solid #ffbd59'}}>
+          <Link to ='/' style = {{color: 'white', textDecoration: 'none', borderBottom: '3px solid #ffbd59'}}>
             Home
           </Link>
-          <a href="#exercises" style={{textDecoration: 'none', color: 'black', borderBottom: '3px solid #ffbd59'}}> Exercises </a>
-          <a href="#reviews" style={{textDecoration: 'none', color: 'black', borderBottom: '3px solid #ffbd59'}}> Reviews </a>
+          <a href="#exercises" style={{textDecoration: 'none', color: 'white', borderBottom: '3px solid #ffbd59'}}> Exercises </a>
+          <a href="#reviews" style={{textDecoration: 'none', color: 'white', borderBottom: '3px solid #ffbd59'}}> Reviews </a>
 
         </Stack>
     </Stack>
