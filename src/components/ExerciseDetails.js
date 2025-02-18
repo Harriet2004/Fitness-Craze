@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Stack, Button, Typography } from '@mui/material';
+import { Stack, Button, Typography, CircularProgress } from '@mui/material';
 import BodyPart from '../assets/bodypart.png';
 import Equipment from '../assets/equipment.png';
 import { InfinitySpin } from 'react-loader-spinner';

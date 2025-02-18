@@ -1,6 +1,6 @@
 import React from 'react';
 import { Box, Stack, Typography, CircularProgress } from '@mui/material';
-import Loader from './Loader';  // Assuming Loader component is already created.
+import Loader from './Loader';  
 
 const Videos = ({ exerciseVideo, name }) => {
     if (!exerciseVideo.length) {

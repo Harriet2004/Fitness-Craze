@@ -20,7 +20,6 @@ const SimilarExercise = ({ exerciseTarget, exerciseEquipment }) => {
 
   return (
     <Box sx={{ mt: { lg: '70px', xs: '0px' } }}>
-      {/* Target Exercises Section */}
       <Typography sx={{ fontSize: { lg: '40px', xs: '25px' } }} fontWeight={500} color="#000" mb="30px" textAlign='center'>
         Watch more videos for similar <span style={{ color: 'rgb(227, 147, 19)', textTransform: 'uppercase', fontWeight: 'bold' }}> target muscles </span>
       </Typography>
@@ -28,7 +27,6 @@ const SimilarExercise = ({ exerciseTarget, exerciseEquipment }) => {
         {exerciseTarget.length !== 0 ? <ScrollBar data={exerciseTarget} /> : targetLoader()}
       </Stack>
 
-      {/* Equipment Exercises Section */}
       <Typography sx={{ fontSize: { lg: '40px', xs: '25px' }, mt: { lg: '100px', xs: '60px' } }} fontWeight={500} color="#000" mb="30px" textAlign="center">
         Watch more videos for similar <span style={{ color: 'rgb(227, 147, 19)', textTransform: 'uppercase', fontWeight: 'bold' }}> equipment exercises </span>
       </Typography>
